@@ -1,0 +1,27 @@
+{
+    "clientes": [
+        {
+            "nombre": "Cliente1",
+            "apellidos": "Apellidos1",
+            "edad": 20,
+            "profesion": "profesion1"
+        },
+        {
+            "nombre": "Cliente2",
+            "apellidos": "Apellidos2",
+            "edad": 30,
+            "profesion": [
+                "profesion1"
+            ]
+        },
+        {
+            "nombre": "Cliente3",
+            "apellidos": "Apellidos3",
+            "edad": 40,
+            "profesion": [
+                "profesion1",
+                "profesion2"
+            ]
+        }
+    ]
+}

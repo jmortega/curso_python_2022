@@ -1,0 +1,6 @@
+Hola, estoy aprendiendo Python.
+En un lugar de la mancha
+de cuyo nombre no quiero acordarme
+etc etc etc
+Python es genialNueva línea en el fichero
+Nueva linea en el fichero
