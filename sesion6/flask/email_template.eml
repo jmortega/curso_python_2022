@@ -1,0 +1,11 @@
+Date: {{date}}
+From: {{from}}
+Subject: {{subject}}
+To: {{to}}
+Content-Type: text/plain
+Hello {{name}},
+Below is the list of products:
+{% for item in items %}- {{item['name']}} ({{item['price']}})
+{% endfor %}
+Thank you for your order!
+

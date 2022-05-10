@@ -1,0 +1,32 @@
+{% block body %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    var submit_form = function(e) {
+      $.getJSON('/suma', {
+        a: $('input[name="a"]').val(),
+        b: $('input[name="b"]').val()
+      }, function(data) {
+        $('#result').text(data.result);
+        $('input[name=a]').focus().select();
+      });
+      return false;
+    };
+
+    $('a#calculate').bind('click', submit_form);
+
+    $('input[type=text]').bind('keydown', function(e) {
+      if (e.keyCode == 13) {
+        submit_form(e);
+      }
+    });
+
+    $('input[name=a]').focus();
+  });
+</script>
+<p>
+  <input type="text" size="5" name="a"> +
+  <input type="text" size="5" name="b"> =
+  <span id="result">?</span>
+<p><a href=# id="calculate">Calcular suma</a>
+{% endblock %}

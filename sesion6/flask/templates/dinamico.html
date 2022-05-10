@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask con parametros din&aacute;micos</title>
+  </head>
+  <body>
+  <h2>Prueba de captura de datos dinamicos</h1>
+  {% if fecha %}
+  <p>Fecha: {{ fecha }}</p>
+  {% else %}
+  <p>:|</p>
+  {% endif %}
+  <p>
+    {% if parametro %}
+      <h1>Hola {{ parametro }}!</h1>
+    {% else %}
+      <h2>Hola mundo sin parametros!</h1>
+    {% endif %}
+  </p>
+  </body>
+</html>
